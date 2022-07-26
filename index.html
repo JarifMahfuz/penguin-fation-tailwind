@@ -5,8 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Penguin Fashion</title>
+    <!-- tailwind css link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                yash: ' #FFFBF0',
+              }
+            }
+          }
+        }
+      </script>
+      <!-- font kit -->
+      <script src="https://kit.fontawesome.com/062ecc5e49.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+ <header class="bg-yash pb-32 pt-12">
+    <section class="container mx-auto sm:flex items-center justify-around">
+        <div class=" space-y-5">
+            <div class="text-2xl sm:text-5xl uppercase font-bold">
+                <span class="text-yellow-500"><h1>Be the Penguins</h1></span>
+                <span class=""><h1>of Winter</h1></span>
+            </div>
+            <div>
+                <p>A fashion is nothing but an induced epidemic.</p>
+            </div>
+            <button class="uppercase font-semibold bg-lime-600 text-white	py-4 px-7 rounded-lg	"><i class="fa-solid     fa-cart-shopping"></i> Buy Now
+            </button>
+        </div>
+        <div class="pt-5 sm:pt-0">
+            <img class="w-1/2 w-full" src="images/model.png" alt="">
+        </div>
+    </section>
+ </header>
 </body>
 </html>
